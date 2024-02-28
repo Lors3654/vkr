@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+a.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  color: black; 
+}
+.title-h1{
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+.title-h6{
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+}
+.title-carddes{
+  font-family: 'Lora', serif;
+  font-size: 11px;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  fill: none;
+}
+.img-fluid{
+  width: auto !important;
+  height: 900px !important;
+}
+.navbar-collapse{
+  top: calc(100% + 10px);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.navbar-collapse.show{
+  opacity: 1;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler{
+  border: none !important;
+  font-size: 2rem !important;
+}
+.navbar-toggler:active{
+  transform: scale(0.9);
+}
+/* .dropdown-menu {
+  background-color: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+} */
+
