@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+a.nav-link {
+  color: black;
+  text-decoration: none;
+}
+a.nav-link:hover {
+  color: black; 
+}
+.title-h1{
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+.title-h6{
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+}
+.title-carddes{
+  font-family: 'Lora', serif;
+  font-size: 11px;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  fill: none;
+}
+.img-fluid{
+  width: auto !important;
+  height: 900px !important;
+}
+.navbar-collapse{
+  top: calc(100% + 10px);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.navbar-collapse.show{
+  opacity: 1;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler{
+  border: none !important;
+  font-size: 2rem !important;
+}
+.navbar-toggler:active{
+  transform: scale(0.9);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  height: 20%; 
+  bottom: 10%;
+  margin-top: 45%;
+}
+.custom-button {
+  background-color: transparent;
+  border: none;
+}
+.custom-button:active {
+  transform: translateY(1px);
+}
+
+hr {
+  position: relative;
+  border: none;
+  border-top: 1px solid gray; 
+  height: 1px;
+}
+/* Стиль для псевдоэлемента, покрывающего черную половину линии */
+hr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%; 
+  background-color: black; 
+  z-index: 1; 
+}
+
+/* Стиль для линии при переходе на страницу Wishlist */
+.wishlist-line {
+  position: relative;
+  border: none;
+  border-top: 1px solid gray;
+  height: 1px;
+}
+
+/* Стиль для второй части линии на странице Wishlist */
+.wishlist-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  height: 100%;
+  width: 50%; 
+  background-color: black; 
+  z-index: 1;
+}
+
+/* Таблица */
+.product-thumb {
+  width: 20%; 
+}
+
+.product-inf {
+  width: 30%; 
+}
+
+.product-quantity {
+  width: 15%; 
+}
+
+.product-total-price {
+  width: 20%; 
+}
+
+.product-action {
+  width: 15%;
+}
+
+.input-group.justify-content-center {
+  flex-wrap: nowrap;
+}
+
